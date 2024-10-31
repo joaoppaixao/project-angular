@@ -1,0 +1,43 @@
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+  <main>
+    <section>
+      <div id="formulario">
+        <h1>Escolha os times</h1>
+        <form (ngSubmit)="onSubmit()">
+
+              <p class="paragrafo">Selecione o primeiro time: </p>
+              <div class="campo">
+                <label for="time1">Escolha o primeiro time: </label>
+                <select name="time1" id="time1" [(ngModel)]="time1" required>
+                  <option value="" disabled> Selecione um time </option>
+                  <option *ngFor="let time of times" [value]="time">{{ time }}</option>
+                </select>
+              </div>
+        
+              <p id="x">X</p>
+              
+              <p class="paragrafo">Selecione o segundo time: </p>
+              <div class="campo">
+                <label for="time2">Escolha o segundo time: </label>
+                <select name="time2" id="time2" [(ngModel)]="time2" required>
+                  <option value="" disabled> Selecione um time </option>
+                  <option *ngFor="let time of times" [value]="time"> {{ time }}</option>
+                </select>
+              </div>
+                
+              <p class="paragrafo">Selecione o horário do jogo: </p>
+                <div class="campo">
+                  <label for="horario">Escolha um horário: </label>
+                  <span class="material-icons">alarm</span>
+                  <input type="time" [(ngModel)]="horario" required>
+                </div>
+        
+              <button type="submit">Confirmar jogo</button>
+  
+        </form>
+      </div>
+    </section>
+  </main>
