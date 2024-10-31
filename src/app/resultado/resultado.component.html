@@ -1,8 +1,11 @@
-<h2> Resultado do jogo! </h2>
-
 <div *ngIf="jogo">
+    <h1> Resultado do jogo: </h1>
     <p><strong> Time1: </strong> {{ jogo.time1 }}</p>
+
+    <p id="x">X</p>
+
     <p><strong> Time2: </strong> {{ jogo.time2 }}</p>
+    
     <p><strong> Horário: </strong> {{ jogo.horario }}</p>
 
     <button routerLink="/formulario">Voltar</button>
