@@ -26,11 +26,11 @@
           </select>
         </div>
 
-        <p class="paragrafo">Selecione o horário do jogo: </p>
+        <p class="paragrafo">Selecione a data e o horário do jogo: </p>
         <div class="campo">
-          <label for="horario">Escolha um horário: </label>
+          <label for="horario">Escolha uma Data e um horário: </label>
           <span class="material-icons">alarm</span>
-          <input type="time" [(ngModel)]="horario" required>
+          <input type="datetime-local" [(ngModel)]="horario" required>
         </div>
 
         <button type="submit">Confirmar jogo</button>

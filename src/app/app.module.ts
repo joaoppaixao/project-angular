@@ -6,12 +6,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { ResultadoComponent } from './resultado/resultado.component';
+import { PlacarJogosComponent } from './placar-jogos/placar-jogos.component';
+import { HomeComponent } from './home/home.component';
+import { TodosComponent } from './todos/todos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularioComponent,
-    ResultadoComponent
+    ResultadoComponent,
+    PlacarJogosComponent,
+    HomeComponent,
+    TodosComponent
   ],
   imports: [
     BrowserModule,
